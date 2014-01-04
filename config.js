@@ -14,7 +14,8 @@ exports.config = {
           'vendor/scripts/common/jquery.js',
           'vendor/scripts/common/handlebars.js',
           'vendor/scripts/development/ember.js',
-          'vendor/scripts/development/ember-data.js'
+          'vendor/scripts/development/ember-data.js',
+          'vendor/scripts/common/ember-json-api.js'
         ]
       }
     },
