@@ -1,5 +1,5 @@
-module.exports = Ember.Route.extend({
+module.exports = App.ProjectsRoute = Ember.Route.extend({
   model: function() {
-    return ['project1', 'project2', 'project3'];
+    return this.store.findAll('project');
   }
 });
