@@ -4,9 +4,10 @@
 
 1. Install [brew](http://brew.sh/) ```ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"```
 2. Install node.js ```brew install node.js```
-3. Fork this repo
-4. Clone your fork
-5. Install brunch ```npm install -g brunch```
+3. Install brunch ```npm install -g brunch```
+4. Fork this repo
+5. Clone your fork
+6. Run `npm install`
 
 ## Run your app
 
