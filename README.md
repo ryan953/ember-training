@@ -6,6 +6,7 @@
 2. Install node.js ```brew install node.js```
 3. Fork this repo
 4. Clone your fork
+5. Run `npm install`
 5. Install brunch ```npm install -g brunch```
 
 ## Run your app
