@@ -1,0 +1,2 @@
+{"billable":true,"description":"This is a sample task","name":"Sample Task","rate_amount":"2.50","rate_code":"CAD","updated":{"$$date":1346490061000},"_id":"1"}
+{"billable":true,"description":"This is a sample task","name":"Sample Task","rate_amount":"70.00","rate_code":"CAD","updated":{"$$date":1346490061000},"_id":"2"}

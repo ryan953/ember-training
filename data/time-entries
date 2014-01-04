@@ -1,0 +1,10 @@
+{"billed":true,"date":{"$$date":1231977600000},"hours":"1.23","locked":false,"note":"billed b/c it is on an active invoice","project":1,"task":1,"user":4,"_id":"1"}
+{"billed":false,"date":{"$$date":1231977600000},"hours":"2.55","locked":false,"note":"working for the man - system 100","project":7,"task":3,"user":4,"_id":"10"}
+{"billed":true,"date":{"$$date":1231891200000},"hours":"6.75","locked":false,"note":"marked as billed, not actually on an actual invoice","project":1,"task":1,"user":5,"_id":"2"}
+{"billed":false,"date":{"$$date":1232150400000},"hours":"8.75","locked":false,"note":"unbilled b/c it is on a deleted invoice","project":1,"task":1,"user":5,"_id":"3"}
+{"billed":false,"date":{"$$date":1232236800000},"hours":"3.75","locked":false,"note":"unbilled","project":5,"task":1,"user":5,"_id":"4"}
+{"billed":false,"date":{"$$date":1200614400000},"hours":"4.32","locked":false,"note":"unassigned to project","project":1,"task":1,"user":10,"_id":"5"}
+{"billed":false,"date":{"$$date":1205452800000},"hours":"1.5","locked":false,"note":"on project 8","project":8,"task":1,"user":4,"_id":"6"}
+{"billed":false,"date":{"$$date":1231977600000},"hours":"5","locked":false,"note":"Yak-shaving","project":7,"task":1,"user":100,"_id":"7"}
+{"billed":false,"date":{"$$date":1231977600000},"hours":"1","locked":false,"note":"working for the man - system 101","project":7,"task":1,"user":9,"_id":"8"}
+{"billed":false,"date":{"$$date":1231977600000},"hours":"7.89","locked":false,"note":"working for the man - system 100","project":7,"task":1,"user":100,"_id":"9"}
