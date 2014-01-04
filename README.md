@@ -13,6 +13,12 @@
 1. Start server: ```brunch watch --server```
 2. Open http://localhost:3333 in Chrome
 
+## Libraries
+
+* [Bootstrap 3.0](http://getbootstrap.com/css/) - CSS framework for rapid scaffolding
+* [Flat UI](http://designmodo.github.io/Flat-UI/) - CSS styling
+* [Bootstrap for Ember](http://ember-addons.github.io/bootstrap-for-ember/dist/#/show_components/alert) - Bootstrap components for Ember.js
+
 ## Generators
 
 This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#readme) generators to help you create common files quicker. To use first install scaffolt globally with `npm install -g scaffolt`. Then you can use the following command to generate files.
