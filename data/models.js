@@ -57,9 +57,10 @@ module.exports = {
     client:       'user',
     managed_by:   'user',
     users:        ['user'],
-    tasks:        ['task']
+    tasks:        ['task'],
+    time_entries: ['time_entry'],
   },
-  'time-entry': {
+  time_entry: {
     billed:   Boolean,
     date:     Date,
     hours:    String,
@@ -68,6 +69,5 @@ module.exports = {
     project:  'project',
     task:     'task',
     user:     'user',
-    'timeentryid': String
   }
 };

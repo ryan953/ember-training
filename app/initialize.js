@@ -3,6 +3,8 @@
 window.App = require('config/app');
 require('config/router');
 require('config/store');
+require('config/adapter');
+require('config/serializer');
 
 // Load all modules in order automagically. Ember likes things to work this
 // way so everything is in the App.* namespace.
