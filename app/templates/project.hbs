@@ -28,15 +28,15 @@
   <table class="table table-striped">
     <tr>
       <th>Date</th>
-      <th>Hours</th>
       <th>Note</th>
+      <th>Hours</th>
       <th>Billed</th>
     </tr>
       {{#each timeEntries}}
           <tr>
             <td>{{date}}</td>
-            <td>{{hours}}</td>
             <td>{{note}}</td>
+            <td>{{hours}}</td>
             <td>{{#if billed}}Yep{{else}}Nope{{/if}}</td>
           </tr>
       {{/each}}
