@@ -1,3 +1,5 @@
+<h3>Projects</h3>
+
 <table class="table table-striped">
   <tr>
     <th>Name</th>
@@ -5,7 +7,7 @@
   </tr>
     {{#each}}
         <tr>
-          <td>{{name}}</td>
+          <td>{{#link-to 'project' this}}{{name}}{{/link-to}}</td>
           <td>{{description}}</td>
         </tr>
     {{/each}}
