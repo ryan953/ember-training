@@ -13,6 +13,7 @@ exports.config = {
           'vendor/scripts/common/console-polyfill.js',
           'vendor/scripts/common/jquery.js',
           'vendor/scripts/common/handlebars.js',
+          'vendor/scripts/common/moment.js',
           'vendor/scripts/development/ember.js',
           'vendor/scripts/development/ember-data.js',
           'vendor/scripts/common/ember-json-api.js',

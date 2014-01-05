@@ -34,7 +34,7 @@
     </tr>
       {{#each timeEntries}}
           <tr>
-            <td>{{date}}</td>
+            <td>{{time-since date}}</td>
             <td>{{note}}</td>
             <td>{{hours}}</td>
             <td>{{#if billed}}Yep{{else}}Nope{{/if}}</td>
