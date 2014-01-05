@@ -1,0 +1,46 @@
+<h2 class="page-header text-primary" title="{{description}}">
+  {{name}}
+</h2>
+
+<p>
+  <span class="fui-user"></span>
+  Managed by <strong>{{managerName}}</strong>
+  {{#if clientName}}
+    and billed to <strong>{{clientName}}</strong>
+  {{/if}}
+</p>
+
+<p>
+  <span class="fui-time"></span>
+  <span class='project-totals-hours'>
+    You've logged <strong>{{hoursLogged}} hours</strong>
+  </span>
+  {{#if hoursBudgeted}}
+    against the <strong>{{hoursBudgeted}} hours </strong> budgeted
+  {{/if}}
+</p>
+
+<br>
+
+<h5>Time entries</h5>
+
+{{#if timeEntries}}
+  <table class="table table-striped">
+    <tr>
+      <th>Date</th>
+      <th>Hours</th>
+      <th>Note</th>
+      <th>Billed</th>
+    </tr>
+      {{#each timeEntries}}
+          <tr>
+            <td>{{date}}</td>
+            <td>{{hours}}</td>
+            <td>{{note}}</td>
+            <td>{{#if billed}}Yep{{else}}Nope{{/if}}</td>
+          </tr>
+      {{/each}}
+  </table>
+{{else}}
+  <p class="text-muted">You haven't logged any time yet. Better get crackin'!</p>
+{{/if}}
