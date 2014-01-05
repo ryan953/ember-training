@@ -1,4 +1,4 @@
-module.exports = App.ClientEditRoute = Ember.Route.extend({
+module.exports = App.ClientIndexRoute = Ember.Route.extend({
   model: function(){
     return this.modelFor('client');
   }
