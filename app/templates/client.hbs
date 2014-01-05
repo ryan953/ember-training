@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-lg-10">
+        <h2>Client: {{name}}</h2>
+    </div>
+    <div class="col-lg-2">
+      {{#unless isEditing}}
+          {{#link-to 'client.edit' this classNames="btn btn-primary"}}Edit{{/link-to}}
+      {{/unless}}
+    </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+      {{outlet}}
+  </div>
+</div>

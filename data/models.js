@@ -58,7 +58,7 @@ module.exports = {
     managed_by:   'user',
     users:        ['user'],
     tasks:        ['task'],
-    time_entries: ['time_entry'],
+    time_entries: ['time_entry']
   },
   time_entry: {
     billed:   Boolean,
@@ -68,6 +68,6 @@ module.exports = {
     note:     String,
     project:  'project',
     task:     'task',
-    user:     'user',
+    user:     'user'
   }
 };
