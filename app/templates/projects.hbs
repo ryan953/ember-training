@@ -4,11 +4,15 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Manager</th>
+    <th>Client</th>
   </tr>
     {{#each}}
         <tr>
           <td>{{#link-to 'project' this}}{{name}}{{/link-to}}</td>
           <td>{{description}}</td>
+          <td>{{managerName}}</td>
+          <td>{{clientName}}</td>
         </tr>
     {{/each}}
 </table>
