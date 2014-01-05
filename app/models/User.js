@@ -6,5 +6,5 @@ module.exports = App.User = DS.Model.extend({
   lname: DS.attr('string'),
   name: function () {
     return this.get('fname') + ' ' + this.get('lname');
-  }.property('fname', 'lname')
+  }.property('fname', 'lname'),
 });
