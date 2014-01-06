@@ -7,5 +7,5 @@
  * To force Ember to use the Ember.ObjectController, we have to explicitly declare the App.ClientEditController class.
  */
 module.exports = App.ClientEditController = Ember.ObjectController.extend({
-
+  isSavable: Ember.computed.not('isDirty')
 });
