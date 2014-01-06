@@ -1,46 +1,17 @@
-<h2 class="page-header text-primary">
-  {{name}}
-</h2>
+<div class="row page-header">
+    <h2>
+        {{name}}
 
-<p>
-  <span class="fui-user"></span>
-  Managed by <strong>{{managerName}}</strong>
-  {{#if clientName}}
-    and billed to <strong>{{clientName}}</strong>
-  {{/if}}
-</p>
+        {{#if isEditing}}
+            {{#link-to 'project' this classNames="btn btn-danger"}}Cancel Edit{{/link-to}}
+        {{else}}
+            {{#link-to 'project.edit' this classNames="btn btn-primary"}}Edit Project{{/link-to}}
+        {{/if}}
+    </h2>
+</div>
 
-<p>
-  <span class="fui-time"></span>
-  <span class='project-totals-hours'>
-    You've logged <strong>{{hoursLogged}} hours</strong>
-  </span>
-  {{#if hoursBudgeted}}
-    against the <strong>{{hoursBudgeted}} hours </strong> budgeted
-  {{/if}}
-</p>
-
-<br>
-
-<h5>Time entries</h5>
-
-{{#if timeEntries}}
-  <table class="table table-striped">
-    <tr>
-      <th>Date</th>
-      <th>Note</th>
-      <th>Hours</th>
-      <th>Billed</th>
-    </tr>
-      {{#each timeEntries}}
-          <tr>
-            <td>{{time-since date}}</td>
-            <td>{{note}}</td>
-            <td>{{hours}}</td>
-            <td>{{#if billed}}Yep{{else}}Nope{{/if}}</td>
-          </tr>
-      {{/each}}
-  </table>
-{{else}}
-  <p class="text-muted">You haven't logged any time yet. Better get crackin'!</p>
-{{/if}}
+<div class="row">
+    <div class="col-lg-12">
+      {{outlet}}
+    </div>
+</div>
