@@ -3,12 +3,6 @@
 var c = Ember.computed;
 
 module.exports = App.ProjectController = Ember.ObjectController.extend({
-  needs: ['application'],
-
-  // Track whether or not we're editing, so we know when to
-  // display the editing button in the template header.
-  isEditing: c.equal('controllers.application.currentPath', 'project.edit'),
-
   // Display the name of the project manager and client
   managerName: c.alias('managedBy.name'),
   clientName: c.alias('client.name'),
