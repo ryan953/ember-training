@@ -1,42 +1,53 @@
-<p>
-  <span class="fui-user"></span>
-  Managed by <strong>{{managerName}}</strong>
-  {{#unless isInternal}}
-    and billed to <strong>{{clientName}}</strong>
-  {{/unless}}
-</p>
+<div class="row page-header">
+  <h2>
+    {{name}}
+    {{#link-to 'project.edit' this classNames="btn btn-primary"}}Edit Project{{/link-to}}
+  </h2>
+</div>
 
-<p>
-  <span class="fui-time"></span>
-  <span class='project-totals-hours'>
-    You've logged <strong>{{hoursLogged}} hours</strong>
-  </span>
-  {{#if hoursBudgeted}}
-    against the <strong>{{hoursBudgeted}} hours </strong> budgeted
-  {{/if}}
-</p>
+<div class="row">
+  <div class="col-lg-12">
+    <p>
+      <span class="fui-user"></span>
+      Managed by <strong>{{managerName}}</strong>
+      {{#unless isInternal}}
+        and billed to <strong>{{clientName}}</strong>
+      {{/unless}}
+    </p>
 
-<br>
+    <p>
+      <span class="fui-time"></span>
+      <span class='project-totals-hours'>
+        You've logged <strong>{{hoursLogged}} hours</strong>
+      </span>
+      {{#if hoursBudgeted}}
+        against the <strong>{{hoursBudgeted}} hours </strong> budgeted
+      {{/if}}
+    </p>
 
-<h5>Time entries</h5>
+    <br>
 
-{{#if timeEntries}}
-  <table class="table table-striped">
-    <tr>
-      <th>Date</th>
-      <th>Note</th>
-      <th>Hours</th>
-      <th>Billed</th>
-    </tr>
-      {{#each timeEntries}}
-          <tr>
-            <td>{{time-since date}}</td>
-            <td>{{note}}</td>
-            <td>{{hours}}</td>
-            <td>{{#if billed}}Yep{{else}}Nope{{/if}}</td>
-          </tr>
-      {{/each}}
-  </table>
-{{else}}
-  <p class="text-muted">You haven't logged any time yet. Better get crackin'!</p>
-{{/if}}
+    <h5>Time entries</h5>
+
+    {{#if timeEntries}}
+      <table class="table table-striped">
+        <tr>
+          <th>Date</th>
+          <th>Note</th>
+          <th>Hours</th>
+          <th>Billed</th>
+        </tr>
+          {{#each timeEntries}}
+            <tr>
+              <td>{{time-since date}}</td>
+              <td>{{note}}</td>
+              <td>{{hours}}</td>
+              <td>{{#if billed}}Yep{{else}}Nope{{/if}}</td>
+            </tr>
+          {{/each}}
+      </table>
+    {{else}}
+      <p class="text-muted">You haven't logged any time yet. Better get crackin'!</p>
+    {{/if}}
+  </div>
+</div>
