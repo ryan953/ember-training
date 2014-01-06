@@ -5,6 +5,7 @@
     <th>Name</th>
     <th>Description</th>
     <th>Client</th>
+    <th>&nbsp;</th>
   </tr>
     {{#each}}
         <tr>
@@ -17,6 +18,7 @@
               {{clientName}}
             {{/if}}
           </td>
+          <td>{{#link-to 'project.edit' this}}edit{{/link-to}}</td>
         </tr>
     {{/each}}
 </table>
