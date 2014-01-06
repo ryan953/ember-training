@@ -1,9 +1,6 @@
 'use strict';
 
 module.exports = App.ProjectEditController = Ember.ObjectController.extend({
-  projectBinding: 'controllers.project',
-  needs: 'project',
-
   // Load up a list of users that the project can be assigned
   // to, which we'll use for populating the select list.
   allUsers: function () {

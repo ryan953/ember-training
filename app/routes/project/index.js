@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = App.ProjectEditRoute = Ember.Route.extend({
+module.exports = App.ProjectIndexRoute = Ember.Route.extend({
   model: function(){
     return this.modelFor('project');
   }
