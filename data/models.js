@@ -55,7 +55,6 @@ module.exports = {
     rate_amount:  String,
     rate_code:    String,
     client:       'user',
-    managed_by:   'user',
     users:        ['user'],
     tasks:        ['task'],
     time_entries: ['time_entry']

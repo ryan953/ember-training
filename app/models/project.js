@@ -5,7 +5,6 @@ module.exports = App.Project = DS.Model.extend({
   description: DS.attr('string'),
   hourBudget: DS.attr('number'),
   rateAmount: DS.attr('number'),
-  managedBy: DS.belongsTo('user'),
   client: DS.belongsTo('user'),
   users: DS.hasMany('user', { async: true }),
   tasks: DS.hasMany('task', { async: true }),

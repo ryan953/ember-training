@@ -8,11 +8,13 @@
 <div class="row">
   <div class="col-lg-12">
     <p>
-      <span class="fui-user"></span>
-      Managed by <strong>{{managerName}}</strong>
-      {{#unless isInternal}}
-        and billed to <strong>{{clientName}}</strong>
-      {{/unless}}
+      {{#if isInternal}}
+        <span class="fui-heart"></span>
+        Billed <strong>internally</strong>
+      {{else}}
+        <span class="fui-user"></span>
+        Billed to <strong>{{clientName}}</strong>
+      {{/if}}
     </p>
 
     <p>

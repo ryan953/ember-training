@@ -3,12 +3,9 @@
 var c = Ember.computed;
 
 module.exports = App.ProjectIndexController = Ember.ObjectController.extend({
-  // Display the name of the project manager and client
-  managerName: c.alias('managedBy.name'),
-  clientName: c.alias('client.name'),
-
-  // Track the project budge details
+  // Track the project budget and billing details
   hoursBudgeted: c.alias('hourBudget'),
+  clientName: c.alias('client.name'),
   isInternal: c.not('client'),
 
   // Sum up the hours logged for the project by looping over
