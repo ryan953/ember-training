@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = App.Router.map(function() {
+App.Router.map(function() {
 
   this.resource('projects');
   this.resource('project', { path: '/projects/:id' }, function () {

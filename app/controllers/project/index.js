@@ -1,12 +1,11 @@
-'use strict';
+var alias = Ember.computed.alias,
+    not   = Ember.computed.not;
 
-var c = Ember.computed;
-
-module.exports = App.ProjectIndexController = Ember.ObjectController.extend({
+App.ProjectIndexController = Ember.ObjectController.extend({
   // Track the project budget and billing details
-  hoursBudgeted: c.alias('hourBudget'),
-  clientName: c.alias('client.name'),
-  isInternal: c.not('client'),
+  hoursBudgeted: alias('hourBudget'),
+  clientName:    alias('client.name'),
+  isInternal:    not('client'),
 
   // Sum up the hours logged for the project by looping over
   // all of the time entries that have been entered towards it.

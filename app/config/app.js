@@ -1,5 +1,3 @@
-'use strict';
-
 Ember.LOG_BINDINGS = true;
 
 var config = {

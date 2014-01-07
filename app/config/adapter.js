@@ -1,3 +1,1 @@
-'use strict';
-
-module.exports = App.ApplicationAdapter = DS.JsonApiAdapter;
+App.ApplicationAdapter = DS.JsonApiAdapter;

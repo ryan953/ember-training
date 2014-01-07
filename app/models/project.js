@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = App.Project = DS.Model.extend({
+App.Project = DS.Model.extend({
   name: DS.attr('string'),
   description: DS.attr('string'),
   hourBudget: DS.attr('number'),

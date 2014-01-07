@@ -1,4 +1,4 @@
-module.exports = App.ClientNewRoute = Ember.Route.extend({
+App.ClientNewRoute = Ember.Route.extend({
   actions: {
     save: function() {
       this.modelFor('client.new').save();

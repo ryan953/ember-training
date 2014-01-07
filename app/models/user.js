@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = App.User = DS.Model.extend({
+App.User = DS.Model.extend({
   email: DS.attr('string'),
   fname: DS.attr('string'),
   lname: DS.attr('string'),

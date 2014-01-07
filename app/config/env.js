@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = (function() {
   var envObject = {};
   var moduleNames = window.require.list().filter(function(module) {
