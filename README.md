@@ -20,19 +20,4 @@
 * [Flat UI](http://designmodo.github.io/Flat-UI/) - CSS styling
 * [Bootstrap for Ember](http://ember-addons.github.io/bootstrap-for-ember/dist/#/show_components/alert) - Bootstrap components for Ember.js
 
-## Generators
-
-This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#readme) generators to help you create common files quicker. To use first install scaffolt globally with `npm install -g scaffolt`. Then you can use the following command to generate files.
-
-```
-scaffolt model <name>             →    app/models/Name.js
-scaffolt view <name>              →    app/views/NameView.js
-scaffolt controller <name>        →    app/controllers/NameController.js
-scaffolt arraycontroller <name>   →    app/controllers/NamesController.js
-scaffolt route <name>             →    app/routes/NameRoute.js
-scaffolt template <name>          →    app/templatesname.hbs
-scaffolt component <name>         →    app/components/NameComponent.js
-                                       app/templates/components/name.hbs
-```
-
 ## Based on [Brunch with Ember Reloaded](https://github.com/gcollazo/brunch-with-ember-reloaded)
