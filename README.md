@@ -5,7 +5,7 @@
 1. Install [node.js](http://nodejs.org/) if you haven't already.
 2. Using the command line, run ```npm install -g brunch``` to install `brunch`.
 3. [Fork and clone](https://github.com/freshbooks/ember-training/fork) this repo.
-4. Run `npm install` in the directory you clone this repo to.
+4. Run `npm install` in the directory you cloned this repo to.
 
 ## Run your app
 
