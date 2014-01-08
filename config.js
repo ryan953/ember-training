@@ -17,6 +17,8 @@ exports.config = {
           'vendor/scripts/development/ember.js',
           'vendor/scripts/development/ember-data.js',
           'vendor/scripts/common/ember-json-api.js',
+          'vendor/scripts/common/ember-json-api.js',
+          'vendor/scripts/common/freshbooks-api-adapter.js',
           'vendor/scripts/common/bs-core.max.js'
         ]
       }

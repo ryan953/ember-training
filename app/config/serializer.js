@@ -1,4 +1,4 @@
-App.ApplicationSerializer = DS.JsonApiSerializer.extend({
+App.ApplicationSerializer = DS.FreshBooksApiSerializer.extend({
   keyForAttribute: function (key) {
     return Ember.String.underscore(key);
   },
