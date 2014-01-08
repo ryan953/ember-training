@@ -2,17 +2,15 @@
 
 ## Installation
 
-1. Install [brew](http://brew.sh/) ```ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"```
-2. Install node.js ```brew install node.js```
-3. Install brunch ```npm install -g brunch```
-4. Fork this repo
-5. Clone your fork
-6. Run `npm install`
+1. Install [node.js](http://nodejs.org/) if you haven't already.
+2. Using the command line, run ```npm install -g brunch``` to install `brunch`.
+3. [Fork and clone](https://github.com/freshbooks/ember-training/fork) this repo.
+4. Run `npm install` in the directory you clone this repo to.
 
 ## Run your app
 
-1. Start server: ```brunch watch --server```
-2. Open http://localhost:3333 in Chrome
+1. Start the server: ```brunch watch --server```
+2. Open http://localhost:3333 in Chrome.
 
 ## Libraries
 
